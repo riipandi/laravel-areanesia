@@ -20,8 +20,8 @@ trait ProvinceTrait
     /**
      * check if province has districts by name.
      *
-     * @param string|array $name District name or array of district names.
-     * @param bool $requireAll All district in the array are required.
+     * @param string|array $name       District name or array of district names.
+     * @param bool         $requireAll All district in the array are required.
      *
      * @return bool
      */
@@ -42,19 +42,20 @@ trait ProvinceTrait
             // Return the value of $requireAll;
             return $requireAll;
         } else {
-            $getDistrictName = array_column($this->districts->toArray(), "name");
+            $getDistrictName = array_column($this->districts->toArray(), 'name');
             if (in_array(strtoupper($name), $getDistrictName)) {
                 return true;
             }
         }
+
         return false;
     }
 
     /**
      * check if province has districts by ID.
      *
-     * @param string|array $name District name or array of district names.
-     * @param bool $requireAll All district in the array are required.
+     * @param string|array $name       District name or array of district names.
+     * @param bool         $requireAll All district in the array are required.
      *
      * @return bool
      */
@@ -75,11 +76,12 @@ trait ProvinceTrait
             // Return the value of $requireAll;
             return $requireAll;
         } else {
-            $getDistrictId = array_column($this->districts->toArray(), "id");
+            $getDistrictId = array_column($this->districts->toArray(), 'id');
             if (in_array(strtoupper($id), $getDistrictId)) {
                 return true;
             }
         }
+
         return false;
     }
 }

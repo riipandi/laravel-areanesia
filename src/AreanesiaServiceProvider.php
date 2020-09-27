@@ -3,10 +3,9 @@
 namespace Riipandi\Areanesia;
 
 use Illuminate\Support\ServiceProvider;
-use Riipandi\Areanesia\AreanesiaPublishCommand;
 
 /**
- * Areanesia Service Provider
+ * Areanesia Service Provider.
  */
 class AreanesiaServiceProvider extends ServiceProvider
 {

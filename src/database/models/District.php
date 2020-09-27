@@ -2,10 +2,8 @@
 
 namespace App\Models;
 
-use Riipandi\Areanesia\Traits\DistrictTrait;
 use Illuminate\Database\Eloquent\Model;
-use App\Models\Regency;
-use App\Models\Village;
+use Riipandi\Areanesia\Traits\DistrictTrait;
 
 /**
  * District Model.

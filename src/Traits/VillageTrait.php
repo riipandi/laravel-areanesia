@@ -8,6 +8,7 @@ trait VillageTrait
      * Check if village is sub province.
      *
      * @param int $id Id of province
+     *
      * @return bool
      */
     public function isProvince($id)
@@ -19,6 +20,7 @@ trait VillageTrait
      * Check if village is sub regency.
      *
      * @param int $id Id of regency
+     *
      * @return bool
      */
     public function isRegency($id)
@@ -30,6 +32,7 @@ trait VillageTrait
      * Check if village is sub district.
      *
      * @param int $id Id of district
+     *
      * @return bool
      */
     public function isDistrict($id)
