@@ -1,0 +1,48 @@
+{
+    "name": "riipandi/laravel-areanesia",
+    "description": "Paket Laravel yang berisi data wilayah administratif Indonesia.",
+    "license": "Apache-2.0",
+    "keywords": [
+        "csv",
+        "districts",
+        "indonesia",
+        "laravel",
+        "php",
+        "provinces",
+        "regencies",
+        "region",
+        "villages"
+    ],
+    "authors": [
+        {
+            "name": "Aris Ripandi",
+            "email": "riipandi@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^7.3",
+        "laravel/framework": "^5.8|^6.0|^7.0|^8.0",
+        "parsecsv/php-parsecsv": "^1.2"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "4.8.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Riipandi\\Areanesia\\": "src/"
+        },
+        "files": [
+            "src/RawDataGetter.php"
+        ]
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Riipandi\\Areanesia\\AreanesiaServiceProvider"
+            ],
+            "aliases": {}
+        }
+    },
+    "homepage": "https://github.com/riipandi",
+    "prefer-stable": true
+}
