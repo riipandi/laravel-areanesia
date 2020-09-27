@@ -87,7 +87,7 @@ class AreanesiaPublishCommand extends Command
      */
     protected function publishMigrations()
     {
-        $this->publishDirectory(realpath(__DIR__.'/../database/migrations/)', app()->databasePath().'/migrations/');
+        $this->publishDirectory(realpath(__DIR__.'/../database/migrations/'), app()->databasePath().'/migrations/');
     }
 
     /**
