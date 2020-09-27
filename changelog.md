@@ -2,6 +2,10 @@
 All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog][keepachangelog] and this project adheres to [Semantic Versioning][semver].
 
+## v1.1
+- Move `database` and `data/csv` path to outside `src` directory
+- Add `.editorconfig` file
+
 ## v1.0
 - Initial Release to packagist
 
