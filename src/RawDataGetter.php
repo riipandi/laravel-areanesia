@@ -5,7 +5,7 @@ namespace Riipandi\Areanesia;
 use ParseCsv\Csv;
 
 /**
- * Get raw data from CSV Files on /src/data/csv.
+ * Get raw data from CSV Files on /data/csv.
  */
 class RawDataGetter
 {
@@ -14,7 +14,7 @@ class RawDataGetter
      *
      * @return string
      */
-    protected static $path = __DIR__.'/data/csv';
+    protected static $path = realpath(__DIR__.'/../data/csv');
 
     /**
      * Get provinces data.

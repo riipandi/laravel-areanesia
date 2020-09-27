@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateDistrictsTables extends Migration
+class CreateVillagesTables extends Migration
 {
     /**
      * Run the migrations.
@@ -13,10 +13,14 @@ class CreateDistrictsTables extends Migration
      */
     public function up()
     {
-        Schema::create('areanesia_districts', function (Blueprint $table) {
-            $table->char('id', 7)->index();
-            $table->char('regency_id', 4);
+        Schema::create('areanesia_villages', function (Blueprint $table) {
+            $table->char('id', 10);
+            $table->char('district_id', 7);
             $table->string('name', 50);
+
+            $table->primary('id');
+            $table->foreign('district_id')->references('id')->on('areanesia_districts');
+            $table->index('id');
         });
     }
 
@@ -27,6 +31,6 @@ class CreateDistrictsTables extends Migration
      */
     public function down()
     {
-        Schema::drop('areanesia_districts');
+        Schema::drop('areanesia_villages');
     }
 }

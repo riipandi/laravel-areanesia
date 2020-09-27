@@ -14,8 +14,11 @@ class CreateProvincesTables extends Migration
     public function up()
     {
         Schema::create('areanesia_provinces', function (Blueprint $table) {
-            $table->char('id', 2)->index();
+            $table->char('id', 2);
             $table->string('name');
+
+            $table->primary('id');
+            $table->index('id');
         });
     }
 

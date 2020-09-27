@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateRegenciesTables extends Migration
+class CreateDistrictsTables extends Migration
 {
     /**
      * Run the migrations.
@@ -13,10 +13,14 @@ class CreateRegenciesTables extends Migration
      */
     public function up()
     {
-        Schema::create('areanesia_regencies', function (Blueprint $table) {
-            $table->char('id', 4)->index();
-            $table->char('province_id', 2);
+        Schema::create('areanesia_districts', function (Blueprint $table) {
+            $table->char('id', 7);
+            $table->char('regency_id', 4);
             $table->string('name', 50);
+
+            $table->primary('id');
+            $table->foreign('regency_id')->references('id')->on('areanesia_regencies');
+            $table->index('id');
         });
     }
 
@@ -27,6 +31,6 @@ class CreateRegenciesTables extends Migration
      */
     public function down()
     {
-        Schema::drop('areanesia_regencies');
+        Schema::drop('areanesia_districts');
     }
 }
