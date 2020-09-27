@@ -20,8 +20,8 @@ trait RegencyTrait
     /**
      * check if regency has villages by name.
      *
-     * @param string|array $name villages name or array of villages names.
-     * @param bool $requireAll All villages in the array are required.
+     * @param string|array $name       villages name or array of villages names.
+     * @param bool         $requireAll All villages in the array are required.
      *
      * @return bool
      */
@@ -42,19 +42,20 @@ trait RegencyTrait
             // Return the value of $requireAll;
             return $requireAll;
         } else {
-            $getVillageName = array_column($this->villages->toArray(), "name");
+            $getVillageName = array_column($this->villages->toArray(), 'name');
             if (in_array(strtoupper($name), $getVillageName)) {
                 return true;
             }
         }
+
         return false;
     }
 
     /**
      * check if regency has villages by ID.
      *
-     * @param string|array $name Villages name or array of villages names.
-     * @param bool $requireAll All villages in the array are required.
+     * @param string|array $name       Villages name or array of villages names.
+     * @param bool         $requireAll All villages in the array are required.
      *
      * @return bool
      */
@@ -75,11 +76,12 @@ trait RegencyTrait
             // Return the value of $requireAll;
             return $requireAll;
         } else {
-            $getVillageId = array_column($this->villages->toArray(), "id");
+            $getVillageId = array_column($this->villages->toArray(), 'id');
             if (in_array(strtoupper($id), $getVillageId)) {
                 return true;
             }
         }
+
         return false;
     }
 }

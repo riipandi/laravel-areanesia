@@ -42,25 +42,25 @@ class AreanesiaPublishCommand extends Command
         $this->publishMigrations();
         $this->publishSeeds();
 
-        $this->info("Publishing Areanesia complete");
+        $this->info('Publishing Areanesia complete');
     }
-
 
     /**
      * Publish the directory to the given directory.
      *
-     * @param  string  $from
-     * @param  string  $to
+     * @param string $from
+     * @param string $to
+     *
      * @return void
      */
     protected function publishDirectory($from, $to)
     {
-        $exclude = array('..' , '.' , '.DS_Store');
+        $exclude = ['..', '.', '.DS_Store'];
         $source = array_diff(scandir($from), $exclude);
 
         foreach ($source as $item) {
-            $this->info("Copying file: " . $to . $item);
-            File::copy($from . $item, $to . $item);
+            $this->info('Copying file: '.$to.$item);
+            File::copy($from.$item, $to.$item);
         }
     }
 
@@ -71,13 +71,13 @@ class AreanesiaPublishCommand extends Command
      */
     protected function publishModels()
     {
-        $targetPath = app()->path()."/Models/";
+        $targetPath = app()->path().'/Models/';
 
         if (!File::isDirectory($targetPath)) {
             File::makeDirectory($targetPath, 0777, true, true);
         }
 
-        $this->publishDirectory(__DIR__.'/database/models/', app()->path()."/Models/");
+        $this->publishDirectory(__DIR__.'/database/models/', app()->path().'/Models/');
     }
 
     /**
@@ -87,7 +87,7 @@ class AreanesiaPublishCommand extends Command
      */
     protected function publishMigrations()
     {
-        $this->publishDirectory(__DIR__.'/database/migrations/', app()->databasePath()."/migrations/");
+        $this->publishDirectory(__DIR__.'/database/migrations/', app()->databasePath().'/migrations/');
     }
 
     /**
@@ -97,6 +97,6 @@ class AreanesiaPublishCommand extends Command
      */
     protected function publishSeeds()
     {
-        $this->publishDirectory(__DIR__.'/database/seeds/', app()->databasePath()."/seeds/");
+        $this->publishDirectory(__DIR__.'/database/seeds/', app()->databasePath().'/seeds/');
     }
 }

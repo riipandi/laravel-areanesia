@@ -2,8 +2,8 @@
 
 namespace App\Models;
 
-use Riipandi\Areanesia\Traits\ProvinceTrait;
 use Illuminate\Database\Eloquent\Model;
+use Riipandi\Areanesia\Traits\ProvinceTrait;
 
 /**
  * Province Model.

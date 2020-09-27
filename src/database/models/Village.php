@@ -2,9 +2,8 @@
 
 namespace App\Models;
 
-use Riipandi\Areanesia\Traits\VillageTrait;
 use Illuminate\Database\Eloquent\Model;
-use App\Models\District;
+use Riipandi\Areanesia\Traits\VillageTrait;
 
 /**
  * Village Model.

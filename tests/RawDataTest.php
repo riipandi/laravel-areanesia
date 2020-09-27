@@ -4,12 +4,12 @@ use PHPUnit\Framework\TestCase;
 use Riipandi\Areanesia\RawDataGetter as RawData;
 
 /**
- * Data Test
+ * Data Test.
  */
 class RawDataTest extends TestCase
 {
     /**
-     * Test Provinces Data
+     * Test Provinces Data.
      *
      * @return void
      */
@@ -21,7 +21,7 @@ class RawDataTest extends TestCase
     }
 
     /**
-     * Test Regencies Data
+     * Test Regencies Data.
      *
      * @return void
      */
@@ -33,7 +33,7 @@ class RawDataTest extends TestCase
     }
 
     /**
-     * Test Districts Data
+     * Test Districts Data.
      *
      * @return void
      */
@@ -45,7 +45,7 @@ class RawDataTest extends TestCase
     }
 
     /**
-     * Test Villages Data
+     * Test Villages Data.
      *
      * @return void
      */

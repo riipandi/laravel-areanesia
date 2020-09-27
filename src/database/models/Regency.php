@@ -2,8 +2,8 @@
 
 namespace App\Models;
 
-use Riipandi\Areanesia\Traits\RegencyTrait;
 use Illuminate\Database\Eloquent\Model;
+use Riipandi\Areanesia\Traits\RegencyTrait;
 
 /**
  * Regency Model.
