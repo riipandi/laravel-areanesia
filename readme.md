@@ -1,6 +1,6 @@
 # Laravel Areanesia
 [![Build Status](https://travis-ci.org/riipandi/laravel-areanesia.svg?branch=master)](https://travis-ci.org/riipandi/laravel-areanesia)
-[![StyleCI](https://styleci.io/repos/90970565/shield?branch=master)](https://styleci.io/repos/90970565)
+[![StyleCI](https://styleci.io/repos/298961264/shield?branch=master)](https://styleci.io/repos/298961264)
 [![License](https://poser.pugx.org/riipandi/laravel-areanesia/license)](https://packagist.org/packages/riipandi/laravel-areanesia)
 [![Latest Stable Version](https://poser.pugx.org/riipandi/laravel-areanesia/v/stable)](https://packagist.org/packages/riipandi/laravel-areanesia)
 [![Total Downloads](https://poser.pugx.org/riipandi/laravel-areanesia/downloads)](https://packagist.org/packages/riipandi/laravel-areanesia)
