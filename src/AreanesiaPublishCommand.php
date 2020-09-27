@@ -77,7 +77,7 @@ class AreanesiaPublishCommand extends Command
             File::makeDirectory($targetPath, 0777, true, true);
         }
 
-        $this->publishDirectory(realpath(__DIR__.'/Models/'), app()->path().'/Models/');
+        $this->publishDirectory(__DIR__.'/Models/', app()->path().'/Models/');
     }
 
     /**
@@ -87,7 +87,7 @@ class AreanesiaPublishCommand extends Command
      */
     protected function publishMigrations()
     {
-        $this->publishDirectory(realpath(__DIR__.'/../database/migrations/'), app()->databasePath().'/migrations/');
+        $this->publishDirectory(__DIR__.'/../database/migrations/', app()->databasePath().'/migrations/');
     }
 
     /**
@@ -97,6 +97,6 @@ class AreanesiaPublishCommand extends Command
      */
     protected function publishSeeds()
     {
-        $this->publishDirectory(realpath(__DIR__.'/../database/seeds/'), app()->databasePath().'/seeds/');
+        $this->publishDirectory(__DIR__.'/../database/seeds/', app()->databasePath().'/seeds/');
     }
 }
