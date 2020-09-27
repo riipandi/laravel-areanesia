@@ -6,7 +6,7 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
 - Initial Release to packagist
 
 ## v0.1
-- Inital fork from `https://github.com/riipandi/laravel-areanesia`
+- Inital fork from `https://github.com/azishapidin/indoregion`
 - Refactor codebase
 
 [keepachangelog]:https://keepachangelog.com/en/1.0.0/
