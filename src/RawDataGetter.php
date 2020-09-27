@@ -14,7 +14,7 @@ class RawDataGetter
      *
      * @return string
      */
-    protected static $path = realpath(__DIR__.'/../data/csv');
+    protected static $path = __DIR__.'/../data/csv';
 
     /**
      * Get provinces data.

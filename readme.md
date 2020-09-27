@@ -12,8 +12,8 @@ Kabupaten/Kota, Kecamatan/Distrik, sampai Desa/Kelurahan. Package akan menambahk
 Semua data akan disimpan di database, untuk mengambil data tersebut sama dengan mengambil data lewat Model 
 pada umumnya (Lihat bagian Usage).
 
-Data ini diambil dari situs Pemutakhiran MFD dan MBS Badan Pusat Statistik (http://mfdonline.bps.go.id/) pada 
-11 Januari 2018. Sumber: [https://github.com/edwardsamuel/Wilayah-Administratif-Indonesia][wilayahindonesia].
+Data ini diambil dari situs Pemutakhiran MFD dan MBS Badan Pusat Statistik (http://mfdonline.bps.go.id/)
+pada 11 Januari 2018. Sumber: [Wilayah Administratif Indonesia][wilayahindonesia].
 
 ## Quick Instalation
 ```sh
